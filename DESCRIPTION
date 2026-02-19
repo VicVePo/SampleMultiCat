@@ -1,0 +1,21 @@
+Package: SampleMultiCat
+Title: Sample Size Calculation for Ordinal and Multinomial Outcomes
+Version: 0.5.0
+Authors@R: 
+    person('Victor J.', 'Vera-Ponce', email = 'victor_jvp@hotmail.com', role = c('aut', 'cre'))
+Description: Bilingual (English/Spanish) calculator for sample size in regression
+    models with polytomous outcomes. Supports proportional odds ordinal logistic
+    regression (using worst cumulative cut EPP approach) and multinomial logistic
+    regression (using EPPm criterion from de Jong et al. 2019). The parameter k
+    refers to total regression parameters (degrees of freedom), not the number
+    of variables. Includes optional power-based calculations via Hmisc::posamsize
+    and post-hoc validation of effective EPP/EPPm for published studies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0.0)
+Imports:
+    stats,
+    Hmisc
+LazyData: true
